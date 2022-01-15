@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        *{
+            margin: auto;
+            padding: 0;
+            font-family: 'Rubik', sans-serif;
+            font-weight: 100;
+
+            
+        }
+        .box{
+            display: block;
+            align-items: center;
+            justify-content: center;
+            margin-top: 30px;
+            border-image:url("https://t4.ftcdn.net/jpg/02/00/09/97/240_F_200099796_yIXeWL1QMwXObh2yVnYZXXP9MXnieYbS.jpg") 20/10px 3px 5px 7px;
+            width: 32%;
+            height: 50%;
+
+        }
+        .container{        
+           align-items: center;
+           display: block;
+           justify-content: center;
+           margin: 30px;
+           color:rgb(161, 154, 154);
+         }
+
+        .container p{
+            margin: 20px;
+            margin-left: 10px;
+            margin-bottom: 30px;
+            font-size: 0.8rem;
+        } 
+
+         .container h2{
+              color: black;
+              padding-top: 30px;
+              margin-top: 30px;
+              margin-left: 6px;
+         }
+
+         .cont p{
+             font-weight: bold;
+             font-size: 0.8rem;
+             margin-left: 10px;
+         }
+
+        .form-group input{
+            display: block;
+            width: 340px;
+            height: 27px;
+            padding: 7px;
+            border: 1px solid rgb(184, 178, 178);
+            margin: 10px auto;
+            margin-left: 38px;
+            border-radius: 4px; 
+        }
+        .form-group label{
+            justify-content: center;
+            align-items: center;
+            margin-left: 41px;
+            padding-top: 10px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            color:rgb(161, 154, 154) ;
+        }
+        .btn{
+            margin-left: 37px;
+            height: 65px;
+            width: 360px;
+            padding: 4px 8px;
+            border: 2px solid white;
+            background-color:rgb(63, 63, 241);
+            color: white;
+            margin: 37px;
+            border-radius: 6px;
+            font-size: 1rem;
+            cursor: pointer;
+
+        }
+
+        .btn-icon{
+            margin-left: 8px;
+            margin-top: 50px;
+            justify-content: right;
+        }
+
+        .action_btn{
+            margin: -53px;
+            margin-left: -20px;
+        }
+        .btn1{
+
+            display: inline;
+            height: 54px;
+            width: 160px;
+            padding: 4px 8px;
+            border: 1px solid rgb(184, 178, 178);
+            background-color:white;
+            color: rgb(161, 154, 154);
+            margin: 29px;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .btn2{
+            display: inline;
+            margin-left: 20px;
+            height: 54px;
+            width: 160px;
+            padding: 4px 8px;
+            border: 1px solid rgb(184, 178, 178);
+            background-color:white;
+            color: rgb(161, 154, 154);
+            margin: -1px;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .btn1:hover{
+            border: 1px solid rgb(51, 51, 243);
+            color: rgb(51, 51, 243);
+            background-color: rgb(236, 236, 248);
+        }
+
+        .btn2:hover{
+            border: 1px solid rgb(51, 51, 243);
+            color: rgb(51, 51, 243);
+            background-color: rgb(236, 236, 248);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+    <div class="container">
+        <h2>Tell us about you</h2>
+        <p>Please tell a bit about you so that we can personalize your onboarding experience.<br></p>
+        <div class="cont"><p>You are looking for,</p></div>
+         <div class="action_btn">
+            <button class="btn1">
+                <i class="fas fa-pen-nib fa-lg" style="margin-right: 10px;"></i>
+                Designs</button>
+            <button class="btn2">
+                <i class="fas fa-file-alt fa-lg" style="margin-right: 10px;"></i>
+                Projects</button>
+            </div>
+     </div>
+        <form action="noaction.php" id="loginform">
+            <div class="form-group">
+                <label for="name">Full name</label>
+                <input type="text" id="namebox" name="">
+            </div>
+            <div class="form-group">
+                <label for="name">Location</label>
+                <input type="text" id="locationbox" name="" >
+            </div>
+            <div class="form-group">
+                <label for="name">Phone number</label>
+                <input type="tel" id="phnobox" name="">
+            </div>
+            <button class="btn">
+               Proceed to next step
+            <span class="btn-icon">
+                <ion-icon name="arrow-forward"></ion-icon>
+            </span>
+            </button>
+            <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+        </form>
+    </div>
+</div>
+</body>
+</html>
